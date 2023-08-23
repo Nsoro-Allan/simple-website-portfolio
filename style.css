@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* .main-container{
+    margin-left: 10px;
+    margin-right: 10px;
+} */
+
+/* Navbar Starts Here */
+header{
+    display: flex;
+    flex-direction: row;
+    background: black;
+    color: #fff;
+    padding: 20px;
+}
+
+header .head h1{
+    font-size: 1.5rem;
+}
+
+
+header .navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 860px;
+}
+
+header .navbar ul a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: all ease-in-out 0.3s;
+}
+
+header .navbar ul a:hover{
+    cursor: pointer;
+    color: #b2a8a8;
+    transition: all ease-in-out 0.3s;
+}
+/* Navbar Starts Here */
+
+
+
+/* landing page content starts here */
+.body-container{
+    width: 98.8vw;
+    height: 90vh;
+    background-image: linear-gradient(rgba(12, 12, 12, 0.6),rgba(12, 12, 12, 0.6)),url(./imgs/img1.jpg);
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-container h1{
+    font-size: 3.5rem;
+}
+
+.body-container p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.body-container a{
+    background: #fff;
+    color: black;
+    padding: 11px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 18%;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.body-container a:hover{
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+    border: 2px solid #fff;
+}
+/* landing page content starts here */
+
+/* About Section Starts Here */
+section{
+    margin-top: 30px;
+    transition: all ease-in-out 0.5s;
+}
+
+.about-title{
+    text-align: center;
+}
+
+.about-title h1{
+    font-size: 2.5rem;
+}
+
+.line{
+    background: black;
+    border-radius: 8px;
+    width: 5%;
+    padding: 5px;
+    margin-left: -100px;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+.about-img{
+    width: 500px;
+    height: 450px;
+    margin-left: 30px;
+}
+
+.about-img img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-description{
+    margin-left: 20px;
+    width: 50%;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.about-description p{
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* About Section Ends Here */
+
+/* Footer Starts Here */
+footer{
+    padding: 20px;
+    background: black;
+    color: #fff;
+    text-align: center;
+}
+/* Footer Ends Here */
+
+/* Media Queries Starts Here */
+@media only screen and (max-width: 390px){
+
+    header .head h1{
+        font-size: 1.2rem;
+    }
+
+    header .navbar ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        margin-top: 1px;
+        margin-left: 15px;
+    }
+
+    .body-container{
+        width: 100vw;
+        height: 90vh;
+        background-image: linear-gradient(rgba(12, 12, 12, 0.6),rgba(12, 12, 12, 0.6)),url(./imgs/img1.jpg);
+        background-position: bottom;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .body-container p{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .body-container a{
+        background: #fff;
+        color: black;
+        padding: 11px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 10px;
+        width: 50%;
+        text-align: center;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .about-title h1{
+        font-size: 2rem;
+    }
+
+    .line{
+        background: black;
+        border-radius: 8px;
+        width: 11%;
+        padding: 5px;
+        margin-left: -90px;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+    }
+
+    .about-img{
+        width: 330px;
+        height: 350px;
+        margin-left: 3px;
+    }
+
+    .about-description{
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px;
+        margin-top: -90px;
+    }
+
+    .about-description p{
+        line-height: 30px;
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    footer{
+        padding: 20px;
+        background: black;
+        color: #fff;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+/* Media Queries Ends Here */
