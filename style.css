@@ -11,10 +11,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* .main-container{
-    margin-left: 10px;
-    margin-right: 10px;
-} */
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
 
 /* Navbar Starts Here */
 header{
@@ -26,7 +28,8 @@ header{
 }
 
 header .head h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-left: 15px;
 }
 
 
@@ -35,7 +38,7 @@ header .navbar ul{
     justify-content: flex-end;
     list-style: none;
     margin-top: 5px;
-    margin-left: 860px;
+    margin-left: 870px;
 }
 
 header .navbar ul a{
@@ -71,22 +74,24 @@ header .navbar ul a:hover{
 }
 
 .body-container h1{
-    font-size: 3.5rem;
+    font-size: 2.9rem;
 }
 
 .body-container p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
+    margin-top: 10px;
+
 }
 
 .body-container a{
     background: #fff;
     color: black;
-    padding: 11px;
+    padding: 8px;
     border-radius: 50px;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 18%;
     text-align: center;
     transition: all ease-in-out 0.3s;
@@ -112,15 +117,15 @@ section{
 }
 
 .about-title h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .line{
     background: black;
     border-radius: 8px;
-    width: 5%;
-    padding: 5px;
-    margin-left: -100px;
+    width: 4%;
+    padding: 3px;
+    margin-left: -85px;
 }
 
 .about-container{
@@ -152,7 +157,7 @@ section{
 .about-description p{
     line-height: 30px;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* About Section Ends Here */
